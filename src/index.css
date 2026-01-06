@@ -1,0 +1,42 @@
+.input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db; /* Lighter border */
+    border-radius: 8px; /* Rounded corners */
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+.input:focus {
+    outline: none;
+    border-color: #0f766e; /* Highlight on focus */
+    box-shadow: 0 0 0 1px #0f766e;
+}.btn {
+    padding: 10px 18px;
+    border: none;
+    background: #0f766e; /* Primary color */
+    color: white;
+    font-weight: 600;
+    border-radius: 8px; /* Consistent rounded corners */
+    cursor: pointer;
+    transition: background 0.2s;
+    /* Ensure all buttons use this style */
+}
+.btn:hover:not(:disabled) {
+    background: #047857; /* Slightly darker on hover */
+}
+.btn:disabled {
+    background: #9ca3af; /* Grey out when disabled */
+    cursor: not-allowed;
+}
+.card { 
+    background: white; 
+    padding: 24px; /* Increased padding */
+    border-radius: 12px; /* Smoother corners */
+    /* Soft, professional shadow */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1); 
+}
+/* Add this style to your index.css or app.css */
+.product-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
