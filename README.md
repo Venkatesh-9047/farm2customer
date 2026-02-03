@@ -36,16 +36,3 @@
 ```bash
 git clone [https://github.com/Venkatesh-9047/farm2customer.git](https://github.com/Venkatesh-9047/farm2customer.git)
 cd farm2customer
-
-2. Install Dependencies
-Bash
-npm install
-3. Run Development Server
-Bash
-npm run dev
-🧑‍💻 Author
-Venkatesh
-
-GitHub: @Venkatesh-9047
-
-Focus: Full-Stack Development, Data Structures & Algorithms (DSA), and Web Architecture
