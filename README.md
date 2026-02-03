@@ -1,35 +1,38 @@
-# Farm2Customer (F2C) Marketplace
+# 🚜 Farm2Customer (F2C)
+**Direct Connection Between Local Farmers & Consumers**
 
-A full-stack, serverless e-commerce platform built to bridge the gap between local farmers and consumers. This application allows farmers to list fresh produce and customers to buy them directly based on their location.
+**Farm2Customer** is a full-stack, serverless application built to bridge the gap between rural farmers and urban consumers. By removing middlemen, it allows farmers to list fresh produce directly and enables customers to buy them based on real-time location and availability.
 
-## 🚀 Key Features
+---
 
-* **Role-Based Access Control (RBAC):** Separate user flows and dashboards for **Farmers** and **Customers** powered by Firebase Auth.
-* **Real-time Inventory Management:** Implemented "Auto-Delete" logic where purchased items are instantly removed from the marketplace to ensure stock accuracy.
-* **Location-Based Search:** Advanced filtering using Firestore composite indexing to help customers find fresh produce in their specific city.
-* **Global State Management:** Used React Context API to manage persistent Shopping Cart and User Authentication states across the app.
+## 🌟 Key Features
+
+### 👨‍🌾 For Farmers
+- **Product Management**: A dedicated dashboard to list fresh produce with images, descriptions, and pricing.
+- **Real-Time Inventory**: Custom "Auto-Delete" logic that instantly removes products from the live shop once purchased to ensure stock accuracy.
+- **Seller Identity**: Secure login and management of unique farm listings via **Firebase Authentication**.
+
+### 🛒 For Customers
+- **Location-Based Discovery**: Smart filtering system using **Firestore Composite Indexing** to find fresh produce in your specific city.
+- **Seamless Shopping**: Integrated shopping cart powered by **React Context API** for a persistent and smooth checkout experience.
+- **Role-Based Access**: Specialized user flows that differentiate between buying and selling permissions.
+
+---
 
 ## 🛠️ Tech Stack
 
-### Frontend
-- **React.js (v18):** Core UI library.
-- **React Router (v6):** Client-side navigation and protected routes.
-- **CSS3:** Responsive grid and flexbox layouts.
+| Layer | Technology |
+| :--- | :--- |
+| **Frontend** | React.js (v18), React Router (v6) |
+| **Backend (Serverless)** | Firebase Authentication, Firebase SDK |
+| **Database** | Cloud Firestore (NoSQL) |
+| **Tooling** | Vite, Git/GitHub, NPM |
 
-### Backend (Serverless)
-- **Firebase Authentication:** Secure login and registration.
-- **Cloud Firestore:** NoSQL database for products, users, and orders.
-- **Firebase Hosting:** Global deployment.
+---
 
-### Tools
-- **Vite:** Next-generation frontend tool for fast development.
-- **Git/GitHub:** Version control and repository management.
+## ⚙️ Installation & Setup
 
-## 📁 Project Structure
-- `/src/contexts`: Global state management (Auth/Cart).
-- `/src/services`: Firebase logic (Order creation, Product fetching).
-- `/src/pages`: UI Views (Marketplace, Dashboard, Checkout).
-
-## 🧑‍💻 Author
-**Venkatesh**
-- [GitHub Profile](https://github.com/Venkatesh-9047)
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/Venkatesh-9047/farm2customer.git](https://github.com/Venkatesh-9047/farm2customer.git)
+cd farm2customer
