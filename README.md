@@ -1,16 +1,35 @@
-# React + Vite
+# Farm2Customer (F2C) Marketplace
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack, serverless e-commerce platform built to bridge the gap between local farmers and consumers. This application allows farmers to list fresh produce and customers to buy them directly based on their location.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **Role-Based Access Control (RBAC):** Separate user flows and dashboards for **Farmers** and **Customers** powered by Firebase Auth.
+* **Real-time Inventory Management:** Implemented "Auto-Delete" logic where purchased items are instantly removed from the marketplace to ensure stock accuracy.
+* **Location-Based Search:** Advanced filtering using Firestore composite indexing to help customers find fresh produce in their specific city.
+* **Global State Management:** Used React Context API to manage persistent Shopping Cart and User Authentication states across the app.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Frontend
+- **React.js (v18):** Core UI library.
+- **React Router (v6):** Client-side navigation and protected routes.
+- **CSS3:** Responsive grid and flexbox layouts.
 
-## Expanding the ESLint configuration
+### Backend (Serverless)
+- **Firebase Authentication:** Secure login and registration.
+- **Cloud Firestore:** NoSQL database for products, users, and orders.
+- **Firebase Hosting:** Global deployment.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Tools
+- **Vite:** Next-generation frontend tool for fast development.
+- **Git/GitHub:** Version control and repository management.
+
+## 📁 Project Structure
+- `/src/contexts`: Global state management (Auth/Cart).
+- `/src/services`: Firebase logic (Order creation, Product fetching).
+- `/src/pages`: UI Views (Marketplace, Dashboard, Checkout).
+
+## 🧑‍💻 Author
+**Venkatesh**
+- [GitHub Profile](https://github.com/Venkatesh-9047)
